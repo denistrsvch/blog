@@ -3,40 +3,45 @@ html{
 }
 
 .container{
-    max-width: 400px;
-    height: 620px;
+    padding: 0 15px;
+}
+
+.body{
+    max-width: 380px;
+    height: fit-content;
     border-style: solid;
     border-width: 1px;
     border-radius: 20px;
     border-color: #6e6e6e;
     background-color: #a9b7ae;
-    margin: 130px auto 0;
+    margin: 130px auto ;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
 }
 
 .body__header{
-    max-width: 280px;
-    margin: 45px auto;
     text-align: center;
+    padding: 20px 20px;
 }
 
 .body__header-text{
     font-family: Signika, serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     color: #262626;
 }
 
 .body__input-forms{
-    height: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 input{
-    width: 280px;
-    height: 60px;
+    width: 65%;
+    height: 40px;
     border-style: solid;
     border-width: 1px;
     border-radius: 30px;
@@ -44,14 +49,18 @@ input{
     background-color: #a9b7ae;
     outline: none;
     font-family: Signika, serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     color: #262626;
     text-align: center;
 }
 
+input + input{
+    margin-top: 10px;
+}
+
 .body_sign-up{
-    width: 180px;
+    max-width: 180px;
     max-height: 60px;
     border-style: solid;
     border-width: 1px;
@@ -64,27 +73,42 @@ input{
 }
 
 .sign-up__text{
-    margin: 13px auto;
+    /*margin: 13px auto;*/
     font-family: Signika, serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     color: #f0f0f0;
+    padding: 15px 15px;
 }
-.body__footer{
+.body__footer-text{
     text-align: center;
-    margin: -20px auto;
 }
 
 .body__footer-already{
     font-family: Signika;
     font-size: 16px;
     color: #262626;
-    text-decoration: none solid rgb(38, 38, 38);
 }
 
 .body__footer-sign{
+    padding-bottom: 10px;
     font-family: Signika;
     font-size: 16px;
     color: #f0f0f0;
-    text-decoration: none solid rgb(240, 240, 240);
+}
+
+@media (min-width: 576px) {
+    .body__header-text{
+        font-size: 18px;
+    }
+
+    input{
+        font-size: 20px;
+        height: 50px;
+    }
+
+    .sign-up__text{
+        font-size: 24px;
+    }
+
 }

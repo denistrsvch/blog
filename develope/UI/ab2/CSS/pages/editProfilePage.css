@@ -1,0 +1,263 @@
+
+html {
+    background-color: #b0ccc0;
+}
+
+.container {
+    margin: auto;
+    max-width: 600px;
+    padding: 0 10px;
+}
+
+.container__body {
+    display: flex;
+    align-items: center;
+}
+
+.body {
+    width: 100%;
+    height: fit-content;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    border-color: #6e6e6e;
+    background-color: #a9b7ae;
+    margin: auto;
+}
+
+
+.body__logo {
+    width: 80px;
+    height: 80px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #6e6e6e;
+    border-radius: 20px;
+    margin: 20px auto;
+}
+
+.body__logo-edit-button {
+    width: 25px;
+    height: 25px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 70px;
+    border-color: #6e6e6e;
+    background-color: #b0ccc0;
+    margin: 65px auto;
+}
+
+.body__logo-icon {
+    margin: 5px auto;
+    text-align: center;
+}
+
+    /*.body__information-block {*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*}*/
+
+.body__information-area {
+    display: flex;
+    flex-direction: column;
+    /*margin-right: 55px;*/
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+input, select {
+    /*float: left;*/
+    width: 70%;
+    height: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    border-color: #6e6e6e;
+    background-color: #a9b7ae;
+    outline: none;
+    font-family: Signika, serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.body__information-text {
+    font-family: Signika, serif;
+    font-size: 16px;
+    color: #262626;
+    text-align: start;
+    padding: 5px 10px;
+}
+
+.body__change-text {
+    font-family: Signika, serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.body__footer {
+    width: 80px;
+    height: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    border-color: #6e6e6e;
+    background-color: #d5b19b;
+    opacity: 90%;
+    margin: 22px auto;
+}
+
+.body__footer-text {
+    margin: 7px auto;
+    font-family: Signika, serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f0f0f0;
+    text-align: center;
+    align-items: center;
+}
+
+/*$sm: '(min-width: 576px)'*/
+/*$md: '(min-width: 768px)'*/
+/*$lg: '(min-width: 992px)'*/
+/*$xl: '(min-width: 1200px)'*/
+/*$xxl: '(min-width: 1440px)'*/
+/*$xxxl: '(min-width: 1920px)'*/
+
+@media (min-width: 576px) {
+    .body{
+        max-width: 560px;
+    }
+    input, select {
+        height: 36px;
+        font-size: 18px;
+    }
+
+    .body__information-text {
+        font-size: 20px;
+    }
+
+    .body__footer {
+        width: 140px;
+        height: 40px;
+    }
+
+    .body__change-text{
+        font-size: 28px;
+    }
+
+    .body__footer-text {
+        margin: 10px auto;
+        font-size: 20px;
+    }
+
+    .body__change-text {
+        font-size: 22px;
+    }
+
+    .body__logo {
+        width: 100px;
+        height: 100px;
+        margin: 20px auto;
+    }
+
+    .body__logo-edit-button {
+        width: 30px;
+        height: 30px;
+        margin: 85px auto;
+    }
+
+    .body__logo-icon {
+        margin: 7px auto;
+        /*text-align: center;*/
+    }
+
+    .body__footer {
+        width: 100px;
+        height: 40px;
+        margin: 22px auto;
+    }
+
+    .body__footer-text {
+        margin: 10px auto;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .body__information-area{
+        display: flex;
+        flex-direction: row;
+        padding: 0 20px;
+    }
+
+    input, select {
+        width: 60%;
+        height: 36px;
+        font-size: 18px;
+    }
+
+    .body__information-text {
+        font-size: 20px;
+    }
+
+    .body__footer {
+        width: 140px;
+        height: 40px;
+    }
+
+    .body__change-text{
+        font-size: 28px;
+    }
+
+    .body__footer-text {
+        margin: 10px auto;
+        font-size: 20px;
+    }
+
+    .body__change-text {
+        font-size: 22px;
+    }
+
+    .body__logo {
+        width: 100px;
+        height: 100px;
+        margin: 20px auto;
+    }
+
+    .body__logo-edit-button {
+        width: 30px;
+        height: 30px;
+        margin: 85px auto;
+    }
+
+    .body__logo-icon {
+        margin: 7px auto;
+    }
+
+    .body__footer {
+        width: 120px;
+        height: 50px;
+        margin: 22px auto;
+    }
+
+    .body__footer-text {
+        margin: 14px auto;
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 992px){
+   .body__information-text{
+       font-size: 22px;
+   }
+
+}

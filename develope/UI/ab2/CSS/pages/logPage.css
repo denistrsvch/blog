@@ -1,0 +1,109 @@
+html{
+    background-color: #b0ccc0;
+}
+
+.container{
+    padding: 0 20px;
+}
+
+.body{
+    max-width: 380px;
+    height: fit-content;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    border-color: #6e6e6e;
+    background-color: #a9b7ae;
+    margin: 130px auto;
+}
+
+.body__input-forms{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: flex-start;*/
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px 0;
+}
+
+input{
+    width: 65%;
+    height: 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    border-color:#6e6e6e ;
+    background-color: #a9b7ae;
+    outline: none;
+    font-family: Signika, serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #262626;
+    text-align: center;
+}
+
+input + input{
+    margin-top: 10px;
+}
+
+.body__footer{
+    display: flex;
+    flex-direction: column;
+    /*margin: 20px auto;*/
+}
+
+.body__text{
+    font-family: Signika, serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #262626;
+    text-align: center;
+    padding: 10px    10px;
+}
+
+.body_sign-up{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    border-color: #6e6e6e;
+    background-color: #d5b19b;
+    opacity: 90%;
+    margin: 20px auto;
+}
+
+.sign-in__text{
+    margin: 15px auto;
+    font-family: Signika, serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f0f0f0;
+    padding: 0 10px;
+}
+
+.body__footer-text-have{
+    font-family: Signika;
+    font-size: 16px;
+    color: #262626;
+    padding: 0 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.body__footer-text-sign {
+    padding-bottom: 20px;
+    font-family: Signika;
+    font-size: 16px;
+    color: #f0f0f0;
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+input{
+    height: 45px;
+}
+
+    .sign-in__text{
+        font-size: 22px;
+    }
+
+}

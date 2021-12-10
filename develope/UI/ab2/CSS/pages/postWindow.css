@@ -1,0 +1,245 @@
+html {
+    background-color: #b0ccc0;
+
+}
+
+.container {
+    margin: auto;
+    padding: 0 15px;
+}
+
+.body {
+    max-width: 770px;
+    max-height: 700px;
+    height: fit-content;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    border-color: #6e6e6e;
+    background-color: #a9b7ae;
+    margin: 130px auto;
+    display: flex;
+}
+
+
+.body__cancel {
+    display: flex;
+    margin-top: 16px;
+    justify-content: end;
+    padding: 0 15px;
+}
+
+.body__photo-block {
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    border-color: #6e6e6e;
+}
+
+.body__information-block {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+}
+
+.block__username {
+    display: flex;
+    align-items: center;
+    padding: 15px 15px;
+}
+
+.block__username-avatar {
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: #6e6e6e;
+}
+
+.block__username-text {
+    font-family: Signika, serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #262626;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.block__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+
+}
+
+input {
+    width: 80%;
+    height: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    border-color: #6e6e6e;
+    background-color: #a9b7ae;
+    outline: none;
+    font-family: Signika, serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #262626;
+    text-align: center;
+}
+
+.block__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+}
+
+textarea {
+    width: 80%;
+    height: 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    border-color: #6e6e6e;
+    background-color: #a9b7ae;
+    outline: none;
+    font-family: Signika, serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #262626;
+    text-align: center;;
+}
+
+.block__save {
+    padding: 15px 15px;
+}
+
+.block__save-body {
+    max-width: 120px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    border-color: #6e6e6e;
+    background-color: #d5b19b;
+    opacity: 90%;
+    margin: auto;
+}
+
+.block__save-text {
+    text-align: center;
+    font-family: Signika, serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f0f0f0;
+    padding: 10px 10px;
+}
+
+.block__likes {
+    display: flex;
+    align-items: center;
+    padding: 15px 15px;
+}
+
+.block__likes-text {
+    font-family: Signika, serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #262626;
+    padding: 0 10px;
+}
+
+@media (min-width: 576px) {
+
+    .block__username-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 15px;
+    }
+
+    .block__username-text {
+        font-size: 18px;
+    }
+
+    .body__photo-block{
+        width: 80%;
+    }
+
+    input {
+        height: 30px;
+        font-size: 18px;
+    }
+
+    textarea {
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .block__save {
+        margin-top: 20px;
+    }
+
+    .block__save-text {
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+
+    .block__likes {
+        margin-top: 60px;
+    }
+
+    .block__likes-text {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .block__username-avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 20px;
+    }
+
+    .block__username-text {
+        font-size: 20px;
+    }
+
+    .block__title {
+        margin-top: 40px;
+    }
+
+    .body__photo-block{
+        width: 60%;
+    }
+
+    input {
+        height: 35px;
+        font-size: 20px;
+    }
+
+    textarea {
+        height: 80px;
+        font-size: 18px;
+    }
+
+    .block__save {
+        margin-top: 60px;
+    }
+
+    .block__save-text {
+        font-size: 24px;
+        padding: 15px 15px;
+    }
+
+    .block__likes {
+        margin-top: 80px;
+    }
+
+    .block__likes-text {
+        font-size: 18px;
+    }
+}

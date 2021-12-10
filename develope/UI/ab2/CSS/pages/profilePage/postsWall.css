@@ -1,0 +1,15 @@
+html {
+    background-color: #b0ccc0;
+}
+
+.profile__posts-wall {
+    max-width: 1200px;
+}
+
+.posts-wall__elements {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
