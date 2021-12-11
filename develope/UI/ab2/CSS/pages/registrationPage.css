@@ -1,113 +1,113 @@
-html{
+html {
     background-color: #b0ccc0;
+    font-family: Signika, serif;
 }
 
-.container{
+.container {
     padding: 0 15px;
 }
 
-.body{
+.page-box {
     max-width: 380px;
     height: fit-content;
-    border-style: solid;
-    border-width: 1px;
+    border: solid 1px #6e6e6e;
     border-radius: 20px;
-    border-color: #6e6e6e;
     background-color: #a9b7ae;
-    margin: 130px auto ;
-    height: fit-content;
+    margin: 130px auto;
     display: flex;
     flex-direction: column;
 }
 
-.body__header{
+.page-box__header {
     text-align: center;
     padding: 20px 20px;
 }
 
-.body__header-text{
-    font-family: Signika, serif;
+.page-box__header-text {
     font-size: 16px;
     font-weight: bold;
     color: #262626;
 }
 
-.body__input-forms{
+.page-box__input-forms {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-input{
+input {
     width: 65%;
     height: 40px;
-    border-style: solid;
-    border-width: 1px;
+    border: solid 1px #6e6e6e;
     border-radius: 30px;
-    border-color:#6e6e6e ;
     background-color: #a9b7ae;
     outline: none;
-    font-family: Signika, serif;
     font-size: 16px;
     font-weight: bold;
     color: #262626;
     text-align: center;
 }
 
-input + input{
+input + input {
     margin-top: 10px;
 }
 
-.body_sign-up{
-    max-width: 180px;
-    max-height: 60px;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 30px;
-    border-color: #6e6e6e;
-    background-color: #d5b19b;
-    opacity: 90%;
-    margin: 40px auto;
-   text-align: center;
+.page-box_sign-up-button {
+    margin: 30px auto;
+    text-align: center;
 }
 
-.sign-up__text{
-    font-family: Signika, serif;
+.sign-up__text {
     font-size: 20px;
     font-weight: bold;
     color: #f0f0f0;
     padding: 15px 15px;
 }
-.body__footer-text{
+
+.page-box__footer {
     text-align: center;
+    padding-bottom: 10px;
 }
 
-.body__footer-already{
-    font-family: Signika;
+.page-box__footer-already {
     font-size: 16px;
     color: #262626;
 }
 
-.body__footer-sign{
-    padding-bottom: 10px;
-    font-family: Signika;
+.page-box__footer-link {
     font-size: 16px;
     color: #f0f0f0;
+    text-decoration: none;
+}
+
+.page-box__footer-link:hover {
+    text-decoration: underline;
+}
+
+button {
+    border: solid 1px #6e6e6e;
+    border-radius: 30px;
+    background-color: #d5b19b;
+    opacity: 90%;
+    font-size: 22px;
+    font-weight: bold;
+    color: #f0f0f0;
+    padding: 5px 15px;
+    text-shadow: 0 2px 0 rgba(0.1, 0.1, 0, 0.1);
+}
+
+button:hover {
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0.1, 0.1, 0, 0.1));
 }
 
 @media (min-width: 576px) {
-    .body__header-text{
+    .page-box__header-text {
         font-size: 18px;
     }
 
-    input{
+    input {
         font-size: 20px;
         height: 50px;
     }
-
-    .sign-up__text{
-        font-size: 24px;
-    }
-
 }
