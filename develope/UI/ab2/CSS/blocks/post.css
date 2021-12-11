@@ -159,14 +159,6 @@
     margin: auto;
 }
 
-
-/*$sm: '(min-width: 576px)'*/
-/*$md: '(min-width: 768px)'*/
-/*$lg: '(min-width: 992px)'*/
-/*$xl: '(min-width: 1200px)'*/
-/*$xxl: '(min-width: 1440px)'*/
-/*$xxxl: '(min-width: 1920px)'*/
-
 @media (min-width: 576px) {
     .post-template_1 + .post-template {
         margin-left: 10px;
