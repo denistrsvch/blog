@@ -1,12 +1,12 @@
-html{
+html {
     background-color: #b0ccc0;
 }
 
-.container{
+.container {
     padding: 0 20px;
 }
 
-.body{
+.login-box {
     max-width: 380px;
     height: fit-content;
     border-style: solid;
@@ -17,70 +17,85 @@ html{
     margin: 130px auto;
 }
 
-.body__input-forms{
+.login-box__form {
     display: flex;
     flex-direction: column;
-    /*justify-content: flex-start;*/
     align-items: center;
     margin-top: 50px;
     padding: 20px 0;
 }
 
-input{
+input {
     width: 65%;
     height: 40px;
     border-style: solid;
     border-width: 1px;
     border-radius: 30px;
-    border-color:#6e6e6e ;
+    border-color: #6e6e6e;
     background-color: #a9b7ae;
     outline: none;
-    font-family: Signika, serif;
-    font-size: 18px;
-    font-weight: bold;
-    color: #262626;
-    text-align: center;
-}
-
-input + input{
-    margin-top: 10px;
-}
-
-.body__footer{
-    display: flex;
-    flex-direction: column;
-    /*margin: 20px auto;*/
-}
-
-.body__text{
     font-family: Signika, serif;
     font-size: 16px;
     font-weight: bold;
     color: #262626;
     text-align: center;
-    padding: 10px    10px;
 }
 
-.body_sign-up{
+@media (min-width: 576px) {
+    input {
+        height: 45px;
+        font-size: 18px;
+    }
+}
+
+input + input {
+    margin-top: 10px;
+}
+
+.login-box__footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__link-forgot {
+    font-family: Signika, serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #262626;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.footer__link-forgot:hover {
+    text-decoration: underline;
+}
+
+.footer__sign-in {
+    margin: 20px auto;
+}
+
+button {
     border-style: solid;
     border-width: 1px;
     border-radius: 30px;
     border-color: #6e6e6e;
     background-color: #d5b19b;
     opacity: 90%;
-    margin: 20px auto;
-}
-
-.sign-in__text{
-    margin: 15px auto;
     font-family: Signika, serif;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     color: #f0f0f0;
-    padding: 0 10px;
+    padding: 10px 10px;
+    text-shadow: 0px 2px 0px rgba(0.1, 0.1, 0, 0.1);
 }
 
-.body__footer-text-have{
+button:hover {
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0.1, 0.1, 0, 0.1));
+}
+
+
+.footer__text-have {
     font-family: Signika;
     font-size: 16px;
     color: #262626;
@@ -89,21 +104,16 @@ input + input{
     text-align: center;
 }
 
-.body__footer-text-sign {
+.footer__links-sign {
+    margin: auto;
     padding-bottom: 20px;
     font-family: Signika;
     font-size: 16px;
     color: #f0f0f0;
     text-align: center;
+    text-decoration: none;
 }
 
-@media (min-width: 576px) {
-input{
-    height: 45px;
-}
-
-    .sign-in__text{
-        font-size: 22px;
-    }
-
+.footer__links-sign:hover {
+    text-decoration: underline;
 }
