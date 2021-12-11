@@ -1,131 +1,125 @@
-.container{
+html {
+    font-family: Signika, serif;
+}
+
+.container {
     height: 850px;
     margin: auto;
     padding: 0 15px;
 }
 
-.body{
+.menu-box {
     max-width: 300px;
     width: 50%;
     height: 700px;
-    border-style: solid;
-    border-width: 1px;
+    border: solid 1px #6e6e6e;
     border-radius: 20px;
-    border-color: #6e6e6e;
     background-color: #a9b7ae;
     text-align: center;
     margin: auto;
 }
 
-.body__options-text{
-    font-family: Signika, serif;
+.menu-box__text {
     font-size: 18px;
     font-weight: bold;
     color: #262626;
     padding: 20px 0;
 }
 
-.option{
+.option {
     padding: 0 15px;
     text-align: center;
 }
 
-.option__body{
+.option__box {
     display: flex;
-   justify-content: start;
+    justify-content: start;
     align-items: center;
 }
 
-.option__text{
-    font-family: Signika, serif;
+.option__box-text {
     font-size: 18px;
     font-weight: bold;
     color: #262626;
     padding: 15px 10px;
 }
 
-.option__photo{
+.option__box-photo {
     width: 30px;
     height: 30px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #262626;
+    border: solid 1px #6e6e6e;
     border-radius: 20px;
 }
 
 
-hr{
+hr {
     width: 95%;
     border: none;
-    color: #6e6e6e;
     background-color: #6e6e6e;
     height: 1px;
 }
 
-.option__icon-body{
+.option__add-body {
     width: 30px;
     height: 30px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #262626;
+    border: solid 2px #262626;
     border-radius: 10px;
-    margin-top: 5px ;
+    margin-top: 5px;
 }
 
-.option__icon-add{
+.option__icon-add {
     margin: 5px auto;
 }
 
 
+@media (min-width: 576px) {
 
-@media (min-width: 576px){
-
-    .body__options-text{
+    .menu-box__text {
         font-size: 22px;
     }
 
-    .option__text{
+    .option__box-text {
         font-size: 20px;
     }
 
-    .option__photo{
+    .option__box-photo {
         width: 40px;
         height: 40px;
     }
 
-    .option__icon-body{
+    .option__add-body {
         width: 30px;
         height: 30px;
-        margin-top: 0px ;
+        margin-top: 0px;
     }
 
-    .option__body{
+    .option__box {
         padding: 0 15px;
     }
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
 
-    .body__options-text{
+    .menu-box__text {
         font-size: 22px;
     }
 
-    .option__text{
+    .option__box-text {
         font-size: 22px;
     }
 
-    .option__photo{
+    .option__box-photo {
         width: 40px;
         height: 40px;
     }
 
-    .option__icon-body{
+    .option__add-body {
         width: 30px;
         height: 30px;
-        margin-top: 0px ;
+        margin-top: 0px;
     }
 
-    .option__body{
+    .option__body {
         padding: 0 15px;
     }
 }
