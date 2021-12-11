@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="../CSS/pages/editProfilePage.css">
     <link rel="stylesheet" href="../CSS/blocks/header.css">
-    <link rel="stylesheet" href="../CSS/reset.css">
     <title>Edit profile</title>
 </head>
 <body>
@@ -26,81 +26,82 @@
         </div>
     </header>
 
-    <div class="container__body">
-        <div class="body">
-            <div class="body__logo">
-                <div class="body__logo-edit-button">
-                    <div class="body__logo-icon">
-                        <img src="../images/pencil.svg" alt="">
+    <div class="edit-page__block">
+        <div class="edit-page__block-area">
+            <div class="edit-page__block-logo">
+                <div class="edit-page__block-logo-area">
+                    <div class="edit-page__edit-button">
+                        <button class="edit-page__button">
+                            <img src="../images/pencil.svg" alt="">
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="body__information-block">
-                <div class="body__information-area">
-                    <div class="body__information-text">
+            <div class="edit-page__body">
+                <div class="edit-page__body-input">
+                    <div class="body__input-name">
                         Full name
                     </div>
                     <input type="text">
                 </div>
-                <div class="body__information-area">
-                    <div class="body__information-text">
+                <div class="edit-page__body-input">
+                    <div class="body__input-name">
                         Username
                     </div>
                     <input type="text">
                 </div>
-                <div class="body__information-area">
-                    <div class="body__information-text">
+                <div class="edit-page__body-input">
+                    <div class="body__input-name">
                         Email
                     </div>
                     <input type="email">
                 </div>
-                <div class="body__information-area">
-                    <div class="body__information-text">
+                <div class="edit-page__body-input">
+                    <div class="body__input-name">
                         Date of Birth
                     </div>
-                    <input type="date">
+                    <input class="body_date-of-birth" type="date">
                 </div>
-                <div class="body__information-area">
-                    <div class="body__information-text">
+                <div class="edit-page__body-input">
+                    <div class="body__input-name">
                         Gender
                     </div>
-                    <select name="gender" id="">
-                        <option value="0">Male</option>
+                    <select class="body__select-form" name="gender" id="">
+                        <option value="0">Choose...</option>
                         <option value="1">Male</option>
                         <option value="2">Female</option>
                         <option value="3">None</option>
                     </select>
                 </div>
-<!--            </div>-->
-
-            <div class="body_change-password">
-                <div class="body__change-text">Change password</div>
-                <div class="body__information-area">
-                    <div class="body__information-text">
-                        Old password
+                <div class="edit-page_change-password-block">
+                    <div class="edit-page__change-text">Change password</div>
+                    <div class="edit-page__body-input">
+                        <div class="body__input-name">
+                            Old password
+                        </div>
+                        <input type="password">
                     </div>
-                    <input type="password">
-                </div>
-                <div class="body__information-area">
-                    <div class="body__information-text">
-                        New password
+                    <div class="edit-page__body-input">
+                        <div class="body__input-name">
+                            New password
+                        </div>
+                        <input type="password">
                     </div>
-                    <input type="password">
-                </div>
-                <div class="body__information-area">
-                    <div class="body__information-text">
-                        Confirm new password
+                    <div class="edit-page__body-input">
+                        <div class="body__input-name">
+                            Confirm new password
+                        </div>
+                        <input class="confirm" type="password">
                     </div>
-                    <input type="password">
                 </div>
             </div>
-            <div class="body__footer">
-                <div class="body__footer-text">
-                    Save
+            <div class="edit-page__footer">
+                <div class="edit-page__footer-button">
+                    <button class="footer__save-button">Save</button>
                 </div>
             </div>
         </div>
     </div>
-</div>>
+</div>
 </body>
 </html>
