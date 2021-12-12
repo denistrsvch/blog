@@ -1,13 +1,15 @@
+html{
+    font-family: Signika, serif;
+}
+
 .post-template {
     max-width: 360px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    border-style: solid;
-    border-width: 1px;
+    border: solid 1px #6e6e6e;
     border-radius: 20px;
     background-color: #a9b7ae;
-    border-color: #6e6e6e;
 }
 
 .post-template_1 {
@@ -15,11 +17,9 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    border-style: solid;
-    border-width: 1px;
+    border: solid 1px #6e6e6e;
     border-radius: 20px;
     background-color: #a9b7ae;
-    border-color: #6e6e6e;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -27,11 +27,9 @@
 .post-template__title-body {
     width: 80%;
     height: 35px;
-    border-style: solid;
-    border-width: 1px;
+    border: solid 1px #6e6e6e;
     border-radius: 30px;
     background-color: #d5b19b;
-    border-color: #6e6e6e;
     margin: 14px auto;
     display: flex;
     align-items: center;
@@ -39,7 +37,6 @@
 }
 
 .post-template__title-text {
-    font-family: Signika, serif;
     font-size: 16px;
     font-weight: bold;
     color: #f0f0f0;
@@ -49,10 +46,8 @@
 .post-template__photo-body {
     width: 80%;
     height: 300px;
-    border-style: solid;
-    border-width: 1px;
+    border: solid 1px #6e6e6e;
     border-radius: 20px;
-    border-color: #6e6e6e;
     margin: auto;
 }
 
@@ -67,7 +62,6 @@
 .description__likes-area {
     display: flex;
     justify-content: start;
-    font-family: Signika, serif;
     font-size: 14px;
     font-weight: bold;
     color: #262626;
@@ -84,7 +78,6 @@
 
 .description__description {
     width: 80%;
-    font-family: Signika, serif;
     font-size: 14px;
     font-weight: inherit;
     color: #262626;
@@ -92,7 +85,6 @@
 }
 
 .description__more-button {
-    font-family: Signika, serif;
     font-size: 14px;
     font-weight: bold;
     color: #262626;
@@ -106,15 +98,12 @@
 .post-template__avatar-body {
     width: 25px;
     height: 25px;
-    border-style: solid;
-    border-width: 1px;
+    border: solid 1px #6e6e6e;
     border-radius: 10px;
-    border-color: #6e6e6e;
     margin-left: 10px;
 }
 
 .post-template__title-username {
-    font-family: Signika, serif;
     font-size: 14px;
     font-weight: normal;
     color: #262626;
@@ -126,11 +115,9 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    border-style: solid;
-    border-width: 1px;
+    border: solid 1px #6e6e6e;
     border-radius: 20px;
     background-color: #a9b7ae;
-    border-color: #6e6e6e;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -140,11 +127,9 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    border-style: solid;
-    border-width: 1px;
+    border: solid 1px #6e6e6e;
     border-radius: 20px;
     background-color: #a9b7ae;
-    border-color: #6e6e6e;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -152,10 +137,8 @@
 .post-template__photo-body-wall {
     width: 80%;
     height: 300px;
-    border-style: solid;
-    border-width: 1px;
+    border: solid 1px #6e6e6e;
     border-radius: 20px;
-    border-color: #6e6e6e;
     margin: auto;
 }
 

@@ -1,6 +1,6 @@
 html {
     background-color: #b0ccc0;
-
+    font-family: Signika, serif;
 }
 
 .container {
@@ -12,10 +12,8 @@ html {
     max-width: 770px;
     max-height: 700px;
     height: fit-content;
-    border-style: solid;
-    border-width: 1px;
+    border: solid 1px #6e6e6e;
     border-radius: 20px;
-    border-color: #6e6e6e;
     background-color: #a9b7ae;
     margin: 130px auto;
     display: flex;
@@ -31,10 +29,8 @@ html {
 
 .body__photo-block {
     width: 100%;
-    border-style: solid;
-    border-width: 1px;
+    border: solid 1px #6e6e6e;
     border-radius: 20px;
-    border-color: #6e6e6e;
 }
 
 .body__information-block {
@@ -52,14 +48,11 @@ html {
 .block__username-avatar {
     width: 30px;
     height: 30px;
-    border-style: solid;
-    border-width: 1px;
+    border: solid 1px #6e6e6e;
     border-radius: 10px;
-    border-color: #6e6e6e;
 }
 
 .block__username-text {
-    font-family: Signika, serif;
     font-size: 14px;
     font-weight: bold;
     color: #262626;
@@ -78,10 +71,8 @@ html {
 input {
     width: 80%;
     height: 20px;
-    border-style: solid;
-    border-width: 1px;
+    border: solid 1px #6e6e6e;
     border-radius: 30px;
-    border-color: #6e6e6e;
     background-color: #a9b7ae;
     outline: none;
     font-family: Signika, serif;
@@ -101,10 +92,8 @@ input {
 textarea {
     width: 80%;
     height: 40px;
-    border-style: solid;
-    border-width: 1px;
+    border: solid 1px #6e6e6e;
     border-radius: 20px;
-    border-color: #6e6e6e;
     background-color: #a9b7ae;
     outline: none;
     font-family: Signika, serif;
@@ -120,10 +109,8 @@ textarea {
 
 .block__save-body {
     max-width: 120px;
-    border-style: solid;
-    border-width: 1px;
+    border: solid 1px #6e6e6e;
     border-radius: 30px;
-    border-color: #6e6e6e;
     background-color: #d5b19b;
     opacity: 90%;
     margin: auto;
@@ -131,7 +118,6 @@ textarea {
 
 .block__save-text {
     text-align: center;
-    font-family: Signika, serif;
     font-size: 18px;
     font-weight: bold;
     color: #f0f0f0;
@@ -145,7 +131,6 @@ textarea {
 }
 
 .block__likes-text {
-    font-family: Signika, serif;
     font-size: 16px;
     font-weight: bold;
     color: #262626;

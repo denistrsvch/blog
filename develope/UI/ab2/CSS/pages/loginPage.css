@@ -1,5 +1,6 @@
 html {
     background-color: #b0ccc0;
+
 }
 
 .container {
@@ -9,10 +10,8 @@ html {
 .login-box {
     max-width: 380px;
     height: fit-content;
-    border-style: solid;
-    border-width: 1px;
+    border: solid 1px #6e6e6e;
     border-radius: 20px;
-    border-color: #6e6e6e;
     background-color: #a9b7ae;
     margin: 130px auto;
 }
@@ -28,10 +27,8 @@ html {
 input {
     width: 65%;
     height: 40px;
-    border-style: solid;
-    border-width: 1px;
+    border: solid 1px #6e6e6e;
     border-radius: 30px;
-    border-color: #6e6e6e;
     background-color: #a9b7ae;
     outline: none;
     font-family: Signika, serif;
@@ -58,7 +55,6 @@ input + input {
 }
 
 .footer__link-forgot {
-    font-family: Signika, serif;
     font-size: 16px;
     font-weight: bold;
     color: #262626;
@@ -76,10 +72,8 @@ input + input {
 }
 
 button {
-    border-style: solid;
-    border-width: 1px;
+    border: solid 1px #6e6e6e;
     border-radius: 30px;
-    border-color: #6e6e6e;
     background-color: #d5b19b;
     opacity: 90%;
     font-family: Signika, serif;
@@ -96,7 +90,6 @@ button:hover {
 
 
 .footer__text-have {
-    font-family: Signika;
     font-size: 16px;
     color: #262626;
     padding: 0 10px;
@@ -107,7 +100,6 @@ button:hover {
 .footer__links-sign {
     margin: auto;
     padding-bottom: 20px;
-    font-family: Signika;
     font-size: 16px;
     color: #f0f0f0;
     text-align: center;

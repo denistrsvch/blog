@@ -3,7 +3,7 @@ html {
     font-family: Signika, serif;
 }
 
-.container{
+.container {
     padding: 0 20px;
 }
 
@@ -50,7 +50,7 @@ html {
     margin: 100px auto;
 }
 
-.page-box__icon-image{
+.page-box__icon-image {
     padding: 15px 15px;
 }
 
@@ -113,64 +113,64 @@ button:hover {
 }
 
 
-@media (min-width: 576px){
+@media (min-width: 576px) {
 
-    .page-box__text-add{
+    .page-box__text-add {
         font-size: 26px;
     }
 
-    .page-box__selection-area{
+    .page-box__selection-area {
         height: 400px;
     }
 
-    .page-box__selection-text{
+    .page-box__selection-text {
         margin-top: 125px;
         font-size: 16px;
     }
 
-    input, textarea{
+    input, textarea {
         height: 35px;
         font-size: 18px;
     }
 
-    input[type="text"]{
+    input[type="text"] {
         font-size: 22px;
     }
 
-    .body__add-text{
+    .body__add-text {
         font-size: 24px;
     }
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
 
-    .page-box__text-add{
+    .page-box__text-add {
         font-size: 26px;
     }
 
-    .page-box__selection-area{
+    .page-box__selection-area {
         height: 450px;
     }
 
-    .page-box__selection-text{
+    .page-box__selection-text {
         margin-top: 125px;
         font-size: 16px;
     }
 
-    input, textarea{
+    input, textarea {
         height: 45px;
         font-size: 22px;
     }
 
-    input[type="text"]{
+    input[type="text"] {
         font-size: 26px;
     }
 
-    .body__add-text{
+    .body__add-text {
         font-size: 24px;
     }
 
-    button{
+    button {
         font-size: 22px;
     }
 }
