@@ -1,34 +1,31 @@
 html {
     background-color: #b0ccc0;
+    font-family: Signika, serif;
 }
 
 .container{
     padding: 0 20px;
 }
 
-.body {
-    margin: auto;
+.page-box {
+    margin: 50px auto;
     max-width: 450px;
     width: 100%;
+    border: solid 1px #6e6e6e;
     height: fit-content;
-    border-style: solid;
-    border-width: 1px;
     border-radius: 20px;
-    border-color: #6e6e6e;
     background-color: #a9b7ae;
-    margin: 50px auto;
     padding-bottom: 15px;
 }
 
-.body__cancel {
+.page-box__cancel {
     display: flex;
     margin-top: 16px;
     justify-content: end;
     padding: 0 15px;
 }
 
-.body__add {
-    font-family: Signika, serif;
+.page-box__text-add {
     font-size: 24px;
     font-weight: normal;
     text-align: center;
@@ -36,33 +33,28 @@ html {
     padding: 15px 0;
 }
 
-.body__selection-area {
+.page-box__selection-area {
     max-width: 400px;
     width: 80%;
     max-height: 350px;
-    border-style: solid;
-    border-width: 1px;
+    border: solid 1px #6e6e6e;
     border-radius: 20px;
-    border-color: #6e6e6e;
     margin: auto;
 }
 
-.body__icon-border {
+.page-box__icon-border {
     width: fit-content;
     height: fit-content;
-    border-style: solid;
-    border-width: 2px;
+    border: solid 1px #6e6e6e;
     border-radius: 20px;
-    border-color: #6e6e6e;
     margin: 100px auto;
 }
 
-.body__icon-image{
+.page-box__icon-image{
     padding: 15px 15px;
 }
 
-.body__selection-text {
-    font-family: Signika, serif;
+.page-box__selection-text {
     font-size: 12px;
     font-weight: normal;
     text-align: center;
@@ -74,16 +66,13 @@ input, textarea {
     max-width: 380px;
     width: 65%;
     height: 30px;
-    border-style: solid;
-    border-width: 1px;
+    border: solid 1px #6e6e6e;
     border-radius: 30px;
-    border-color: #6e6e6e;
     background-color: #a9b7ae;
     outline: none;
 }
 
 input[type="text"] {
-    font-family: Signika, serif;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -97,42 +86,44 @@ textarea {
     margin: 5px auto;
 }
 
-.body__input-border {
+.page-box__input-forms {
     padding: 15px 0;
     text-align: center;
 }
 
-.body_add {
-    width: fit-content;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 30px;
-    border-color: #6e6e6e;
-    background-color: #d5b19b;
-    opacity: 90%;
-    margin: auto;
+.page-box__button {
+    text-align: center;
 }
 
-.body__add-text {
+button {
+    border: solid 1px #6e6e6e;
+    border-radius: 30px;
+    background-color: #d5b19b;
+    opacity: 90%;
     font-family: Signika, serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: #f0f0f0;
-    text-align: center;
-    padding: 15px 30px;
+    padding: 10px 20px;
+    text-shadow: 0 2px 0 rgba(0.1, 0.1, 0, 0.1);
 }
+
+button:hover {
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0.1, 0.1, 0, 0.1));
+}
+
 
 @media (min-width: 576px){
 
-    .body__add{
+    .page-box__text-add{
         font-size: 26px;
     }
 
-    .body__selection-area{
+    .page-box__selection-area{
         height: 400px;
     }
 
-    .body__selection-text{
+    .page-box__selection-text{
         margin-top: 125px;
         font-size: 16px;
     }
@@ -153,15 +144,15 @@ textarea {
 
 @media (min-width: 768px){
 
-    .body__add{
+    .page-box__text-add{
         font-size: 26px;
     }
 
-    .body__selection-area{
+    .page-box__selection-area{
         height: 450px;
     }
 
-    .body__selection-text{
+    .page-box__selection-text{
         margin-top: 125px;
         font-size: 16px;
     }
@@ -177,6 +168,10 @@ textarea {
 
     .body__add-text{
         font-size: 24px;
+    }
+
+    button{
+        font-size: 22px;
     }
 }
 
