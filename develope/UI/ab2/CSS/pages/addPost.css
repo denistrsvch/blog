@@ -79,11 +79,13 @@ input[type="text"] {
 }
 
 textarea {
+    height: 45px;
     font-family: Signika, serif;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
     margin: 5px auto;
+    resize: none;
 }
 
 .page-box__input-forms {
@@ -128,8 +130,7 @@ button:hover {
         font-size: 16px;
     }
 
-    input, textarea {
-        height: 35px;
+    textarea {
         font-size: 18px;
     }
 
@@ -157,13 +158,8 @@ button:hover {
         font-size: 16px;
     }
 
-    input, textarea {
-        height: 45px;
+     textarea {
         font-size: 22px;
-    }
-
-    input[type="text"] {
-        font-size: 26px;
     }
 
     .body__add-text {

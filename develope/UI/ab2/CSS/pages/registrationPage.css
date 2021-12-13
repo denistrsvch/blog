@@ -86,6 +86,7 @@ input + input {
 }
 
 button {
+    font-family: Signika, serif;
     border: solid 1px #6e6e6e;
     border-radius: 30px;
     background-color: #d5b19b;

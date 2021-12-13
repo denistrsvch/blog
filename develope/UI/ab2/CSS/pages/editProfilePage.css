@@ -92,6 +92,7 @@ input {
     font-weight: bold;
     text-align: center;
     padding: 6px 10px;
+    resize: none;
 }
 
 .body__input-name {
