@@ -16,6 +16,7 @@ html {
     margin: 130px auto;
     display: flex;
     flex-direction: column;
+    padding: 20px 0;
 }
 
 .page-box__header {
@@ -68,7 +69,6 @@ input + input {
 
 .page-box__footer {
     text-align: center;
-    padding-bottom: 10px;
 }
 
 .page-box__footer-already {
