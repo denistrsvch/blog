@@ -8,149 +8,179 @@ html {
     padding: 0 15px;
 }
 
-.body {
-    max-width: 770px;
-    max-height: 700px;
+.page-box {
+    max-width: 500px;
     height: fit-content;
     border: solid 1px #6e6e6e;
     border-radius: 20px;
     background-color: #a9b7ae;
-    margin: 130px auto;
+    margin: 50px auto;
     display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 0 10px;
 }
 
 
-.body__cancel {
+.page-box__cancel {
     display: flex;
     margin-top: 16px;
     justify-content: end;
     padding: 0 15px;
 }
 
-.body__photo-block {
-    width: 100%;
-    border: solid 1px #6e6e6e;
-    border-radius: 20px;
-}
-
-.body__information-block {
+.page-box__elements{
     display: flex;
     flex-direction: column;
-    padding: 15px 20px;
+    justify-content: start;
+    padding: 0 20px;
 }
 
-.block__username {
+.page-box__username-block {
     display: flex;
     align-items: center;
-    padding: 15px 15px;
+    padding: 10px 0;
 }
 
-.block__username-avatar {
-    width: 30px;
-    height: 30px;
+.page-box__photo {
+    width: 40px;
+    height: 40px;
     border: solid 1px #6e6e6e;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
-.block__username-text {
-    font-size: 14px;
+.page-box__username {
+    padding: 10px 0;
+    font-size: 16px;
     font-weight: bold;
     color: #262626;
-    text-align: center;
     margin-left: 10px;
 }
 
-.block__title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 15px;
-
-}
-
-input {
-    width: 80%;
-    height: 20px;
-    border: solid 1px #6e6e6e;
-    border-radius: 30px;
-    background-color: #a9b7ae;
-    outline: none;
-    font-family: Signika, serif;
-    font-size: 14px;
-    font-weight: bold;
-    color: #262626;
-    text-align: center;
-}
-
-.block__description {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 15px;
-}
-
-textarea {
-    width: 80%;
-    height: 40px;
+.page-box__photo-block {
+    max-width: 450px;
+    width: 100%;
+    height: 400px;
     border: solid 1px #6e6e6e;
     border-radius: 20px;
-    background-color: #a9b7ae;
-    outline: none;
-    font-family: Signika, serif;
-    font-size: 14px;
-    font-weight: bold;
-    color: #262626;
-    text-align: center;;
-}
-
-.block__save {
-    padding: 15px 15px;
-}
-
-.block__save-body {
-    max-width: 120px;
-    border: solid 1px #6e6e6e;
-    border-radius: 30px;
-    background-color: #d5b19b;
-    opacity: 90%;
     margin: auto;
 }
 
-.block__save-text {
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    color: #f0f0f0;
-    padding: 10px 10px;
+.page-box__likes-container {
+    display: flex;
+    flex-direction: column;
 }
 
-.block__likes {
+.page-box__likes {
     display: flex;
     align-items: center;
-    padding: 15px 15px;
+    padding: 10px 15px;
 }
 
-.block__likes-text {
+.page-box__likes-text {
     font-size: 16px;
     font-weight: bold;
     color: #262626;
     padding: 0 10px;
 }
 
+
+
+.page-box__input-forms{
+    display: flex;
+    flex-direction: column;
+}
+
+.page-box__title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+input + .page-box__image{
+    margin: 10px;
+}
+
+input {
+    width: 80%;
+    border: solid 1px #6e6e6e;
+    border-radius: 30px;
+    background-color: #a9b7ae;
+    outline: none;
+    font-family: Signika, serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #262626;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.page-box__description {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+textarea {
+    width: 80%;
+    max-height: 60px;
+    border: solid 1px #6e6e6e;
+    border-radius: 20px;
+    background-color: #a9b7ae;
+    outline: none;
+    font-family: Signika, serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #262626;
+    text-align: center;
+    resize: none;
+}
+
+textarea + .page-box__image{
+    margin: 10px;
+}
+
+.page-box__save {
+    padding: 15px 0;
+    text-align: center;
+}
+
+button {
+    border: solid 1px #6e6e6e;
+    border-radius: 30px;
+    background-color: #d5b19b;
+    opacity: 90%;
+    font-family: Signika, serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #f0f0f0;
+    padding: 5px 15px;
+    text-shadow: 0 2px 0 rgba(0.1, 0.1, 0, 0.1);
+}
+
+button:hover {
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0.1, 0.1, 0, 0.1));
+}
+
 @media (min-width: 576px) {
 
-    .block__username-avatar {
+    .page-box__photo {
         width: 40px;
         height: 40px;
         border-radius: 15px;
     }
 
-    .block__username-text {
+    .page-box__username {
         font-size: 18px;
     }
 
-    .body__photo-block{
-        width: 80%;
+    .page-box__photo-block{
+        height: 450px;
+    }
+
+    .page-box__likes-text {
+        font-size: 18px;
     }
 
     input {
@@ -162,69 +192,23 @@ textarea {
         height: 50px;
         font-size: 16px;
     }
-
-    .block__save {
-        margin-top: 20px;
-    }
-
-    .block__save-text {
-        font-size: 20px;
-        padding: 10px 10px;
-    }
-
-    .block__likes {
-        margin-top: 60px;
-    }
-
-    .block__likes-text {
-        font-size: 18px;
-    }
 }
 
 @media (min-width: 768px) {
 
-    .block__username-avatar {
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
-    }
-
-    .block__username-text {
+    .page-box__username {
         font-size: 20px;
     }
 
-    .block__title {
-        margin-top: 40px;
-    }
-
-    .body__photo-block{
-        width: 60%;
+    .page-box__likes-text {
+        font-size: 18px;
     }
 
     input {
-        height: 35px;
         font-size: 20px;
     }
 
     textarea {
-        height: 80px;
-        font-size: 18px;
-    }
-
-    .block__save {
-        margin-top: 60px;
-    }
-
-    .block__save-text {
-        font-size: 24px;
-        padding: 15px 15px;
-    }
-
-    .block__likes {
-        margin-top: 80px;
-    }
-
-    .block__likes-text {
         font-size: 18px;
     }
 }
