@@ -70,6 +70,7 @@ input, textarea {
     border-radius: 30px;
     background-color: #a9b7ae;
     outline: none;
+    padding: 15px 15px;
 }
 
 input[type="text"] {
