@@ -45,8 +45,6 @@ html{
 .profile__main-photo-body {
     width: 80px;
     height: 80px;
-    border: solid 1px #6e6e6e;
-    border-radius: 20px;
 }
 
 .profile__description {
