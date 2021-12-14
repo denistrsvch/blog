@@ -17,7 +17,6 @@ html {
 
 .edit-page__block-area {
     width: 100%;
-    height: fit-content;
     border: solid 1px #6e6e6e;
     border-radius: 20px;
     background-color: #a9b7ae;
