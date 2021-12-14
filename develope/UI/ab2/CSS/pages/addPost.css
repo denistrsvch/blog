@@ -65,15 +65,12 @@ html {
 input, textarea {
     max-width: 380px;
     width: 65%;
-    height: 30px;
     border: solid 1px #6e6e6e;
     border-radius: 30px;
     background-color: #a9b7ae;
     outline: none;
     padding: 5px 15px;
-}
-
-input[type="text"] {
+    resize: none;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -135,7 +132,7 @@ button:hover {
         font-size: 18px;
     }
 
-    input[type="text"] {
+    input {
         font-size: 22px;
     }
 
@@ -160,8 +157,8 @@ button:hover {
     }
 
      input,textarea {
-         padding: 15px 15px;
-        font-size: 22px;
+         padding: 10px 15px;
+         font-size: 22px;
     }
 
     .body__add-text {
