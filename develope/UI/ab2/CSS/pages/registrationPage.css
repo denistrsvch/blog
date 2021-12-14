@@ -1,0 +1,114 @@
+html {
+    background-color: #b0ccc0;
+    font-family: Signika, serif;
+}
+
+.container {
+    padding: 0 15px;
+}
+
+.page-box {
+    max-width: 380px;
+    border: solid 1px #6e6e6e;
+    border-radius: 20px;
+    background-color: #a9b7ae;
+    margin: 130px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.page-box__header {
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.page-box__header-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #262626;
+}
+
+.page-box__input-forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 65%;
+    height: 40px;
+    border: solid 1px #6e6e6e;
+    border-radius: 30px;
+    background-color: #a9b7ae;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #262626;
+    text-align: center;
+    padding: 0 15px;
+}
+
+input + input {
+    margin-top: 10px;
+}
+
+.page-box_sign-up-button {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.sign-up__text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f0f0f0;
+    padding: 15px 15px;
+}
+
+.page-box__footer {
+    text-align: center;
+}
+
+.page-box__footer-already {
+    font-size: 16px;
+    color: #262626;
+}
+
+.page-box__footer-link {
+    font-size: 16px;
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.page-box__footer-link:hover {
+    text-decoration: underline;
+}
+
+button {
+    font-family: Signika, serif;
+    border: solid 1px #6e6e6e;
+    border-radius: 30px;
+    background-color: #d5b19b;
+    opacity: 90%;
+    font-size: 22px;
+    font-weight: bold;
+    color: #f0f0f0;
+    padding: 5px 15px;
+    text-shadow: 0 2px 0 rgba(0.1, 0.1, 0, 0.1);
+}
+
+button:hover {
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0.1, 0.1, 0, 0.1));
+}
+
+@media (min-width: 576px) {
+    .page-box__header-text {
+        font-size: 18px;
+    }
+
+    input {
+        font-size: 20px;
+        height: 50px;
+    }
+}
