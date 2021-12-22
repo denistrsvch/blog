@@ -1,4 +1,4 @@
-html{
+html {
     font-family: Signika, serif;
 }
 
@@ -14,7 +14,7 @@ html{
     margin: 5px;
 }
 
-.post-template__title{
+.post-template__title {
     padding: 10px 0;
 }
 
@@ -114,7 +114,7 @@ html{
     margin: auto;
 }
 
-.photo{
+.photo {
     border: solid 1px #6e6e6e;
     border-radius: 20px;
     width: 100%;
@@ -122,12 +122,31 @@ html{
     object-fit: cover;
 }
 
-.photo-icon{
+.photo-icon {
     border: solid 1px #6e6e6e;
     border-radius: 10px;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.description__likes-icon {
+
+}
+
+.like{
+    transform: translate(-2px, 0);
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: 200ms;
+    -webkit-transition-timing-function: ease-out;
+    fill: rgb(92, 92, 92);
+    cursor: pointer;
+}
+
+
+.like._active{
+     fill: rgb(435, 92, 92);
 }
 
 
