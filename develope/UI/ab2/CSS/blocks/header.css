@@ -1,3 +1,7 @@
+body._lock {
+    overflow: hidden;
+}
+
 
 .header {
     max-width: 1200px;
@@ -16,48 +20,16 @@
     align-items: center;
 }
 
-.menu {
-    display: flex;
-}
+/*.menu {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
 
-.menu__body._active {
-    top: 0;
-    -webkit-transition: 0.4s;
-    -moz-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s;
-}
-
-.menu__body {
-    left: 0;
-    display: block;
-    background-color: rgba(0, 0, 0, 0.8);
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    overflow: auto;
-    top: -100%;
-    -webkit-transition: 0.4s;
-    -moz-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s;
-}
 
 .menu__icon {
     display: none;
 }
 
-.menu__body {
-
-}
-
-.menu__list > li {
-    padding: 30px 0;
-}
-
-.menu__list > li:first-child {
-    margin-top: 50px;
-}
 
 .menu__link {
     font-size: 22px;
@@ -69,7 +41,7 @@
     text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     .menu__icon {
         display: block;
@@ -130,5 +102,64 @@
         align-items: center;
         z-index: 5;
     }
+
+    .menu__body._active {
+        top: 0;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s;
+    }
+
+    .menu__body {
+        left: 0;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+        top: -100%;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s;
+    }
+
+    .menu__list > li {
+        padding: 30px 0;
+    }
+
+    .menu__list > li:first-child {
+        margin-top: 50px;
+    }
 }
 
+@media (min-width: 768px) {
+
+    .header__container {
+        justify-content: center;
+    }
+
+    .menu__list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .menu__list > li {
+        padding: 0 7px;
+    }
+
+    .menu__link {
+        font-size: 16px;
+    }
+
+    .menu__list._wide > li {
+        padding: 0 20px;
+    }
+
+    .menu__link._wide{
+        font-size: 18px;
+    }
+}
