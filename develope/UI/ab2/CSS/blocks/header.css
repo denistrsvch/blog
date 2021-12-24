@@ -20,12 +20,6 @@ body._lock {
     align-items: center;
 }
 
-/*.menu {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*}*/
-
-
 .menu__icon {
     display: none;
 }

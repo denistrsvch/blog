@@ -59,7 +59,7 @@ html {
 .description__text-area {
     display: flex;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 5px 10px;
 }
 
 .description__description {
@@ -67,7 +67,7 @@ html {
     font-size: 14px;
     font-weight: inherit;
     color: #262626;
-    padding: 5px 0;
+
 }
 
 .description__more-button {
@@ -139,7 +139,7 @@ html {
     transition: 200ms;
     transition-timing-function: ease-in-out;
     -webkit-transition: 200ms;
-    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-in-out;
     fill: rgb(92, 92, 92);
     cursor: pointer;
 }

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../CSS/pages/profilePage/profilePage.css">
     <link rel="stylesheet" href="../CSS/pages/profilePage/postsWall.css">
     <link rel="stylesheet" href="../CSS/blocks/post.css">
+    <link rel="stylesheet" href="../CSS/pages/addPost.css">
 
 </head>
 <body>
@@ -25,13 +26,41 @@
                     <ul class="menu__list">
                         <li><a href="index.html" class="menu__link">My profile</a></li>
                         <li><a href="postsPage.html" class="menu__link">News</a></li>
-                        <li><a href="addPost.html" class="menu__link">Add post</a></li>
+                        <li><a href="#modal" class="menu__link modal-link">Add post</a></li>
                         <li><a href="editProfilePage.html" class="menu__link">Edit profile</a></li>
                         <li><a href="editProfilePage.html" class="menu__link">Change password</a></li>
                         <li><a href=" " class="menu__link">Search users</a></li>
                         <li><a href=" " class="menu__link">Log out</a></li>
                     </ul>
                 </nav>
+            </div>
+        </div>
+        <div id="modal" class="modal__container">
+            <div class="page-box">
+                <a class="page-box__cancel" href="#">X</a>
+                <div class="page-box__text-add">
+                    Add your new post!
+                </div>
+                <div class="page-box__selection-area">
+                    <div class="page-box_selection-icon">
+                        <div class="page-box__icon-border">
+                            <div class="page-box__icon-image">
+                                <img src="../images/image.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="page-box__selection-text">
+                            Click here to select photo
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-box__input-forms">
+                    <input class="post-title" type="text" placeholder="Title">
+                    <textarea class="post-desc" name="description" cols="30" rows="10" placeholder="Description"></textarea>
+                </div>
+                <div class="page-box__button">
+                    <button class="add-button">Add</button>
+                </div>
             </div>
         </div>
     </header>
@@ -236,9 +265,10 @@
 
         </div>
     </div>
-</div>
 
-<script src="../JS/burgerMenu.js"></script>
-<script src="../JS/post.js"></script>
+    <script src="../JS/burgerMenu.js"></script>
+    <script src="../JS/post.js"></script>
+    <script src="../JS/addPost.js"></script>
+</div>
 </body>
 </html>
