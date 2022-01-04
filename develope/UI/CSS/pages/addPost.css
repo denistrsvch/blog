@@ -16,7 +16,6 @@ html {
     transition: all 0.4s ease 0s;
     opacity: 0;
     visibility: hidden;
-    /*padding: 0 15px ;*/
 }
 
 .modal__container.open{
@@ -75,6 +74,7 @@ html {
 }
 
 .page-box__selection-text {
+    bottom: 0;
     font-size: 12px;
     font-weight: normal;
     text-align: center;
@@ -148,7 +148,7 @@ button:hover {
     }
 
     .page-box__selection-text {
-        margin-top: 125px;
+        /*margin-top: 125px;*/
         font-size: 16px;
     }
 
@@ -181,7 +181,7 @@ button:hover {
     }
 
     .page-box__selection-text {
-        margin-top: 125px;
+        /*margin-top: 125px;*/
         font-size: 16px;
     }
 
