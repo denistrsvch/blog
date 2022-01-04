@@ -6,7 +6,7 @@ html{
 .container{
     margin: auto;
     max-width: 660px;
-    padding: 0 15px;
+    padding: 0 15px 5px;
 }
 
 .page-area{
