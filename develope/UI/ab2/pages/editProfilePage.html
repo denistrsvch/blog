@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/pages/editProfilePage.css">
+    <link rel="stylesheet" href="../CSS/blocks/header.css">
+    <title>Edit profile</title>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <div class="header__body">
+            <div class="header__inner">
+                <div class="header__add-button">
+                    <button class="header__add-post-button"><img src="../images/add.svg" alt=""></button>
+                </div>
+                <div class="header__burger-button">
+                    <button class="header__burger-menu-button"><img src="../images/burger.svg" alt="Burger menu">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="edit-page__block">
+        <div class="edit-page__block-area">
+            <div class="edit-page__block-logo">
+                <div class="edit-page__block-logo-area">
+                    <img class="photo" src="../images/dede.jpg" alt="">
+                    <div class="edit-page__edit-button">
+                        <button class="edit-page__button">
+                            <img src="../images/pencil.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="edit-page__body">
+                <div class="edit-page__body-input">
+                    <div class="body__input-name">
+                        Full name
+                    </div>
+                    <input type="text">
+                </div>
+                <div class="edit-page__body-input">
+                    <div class="body__input-name">
+                        Username
+                    </div>
+                    <input type="text">
+                </div>
+                <div class="edit-page__body-input">
+                    <div class="body__input-name">
+                        Email
+                    </div>
+                    <input type="email">
+                </div>
+                <div class="edit-page__body-input">
+                    <div class="body__input-name">
+                        Date of Birth
+                    </div>
+                    <input class="body_date-of-birth" type="date">
+                </div>
+                <div class="edit-page__body-input">
+                    <div class="body__input-name">
+                        Gender
+                    </div>
+                    <select class="body__select-form" name="gender" id="">
+                        <option value="0">Choose...</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">None</option>
+                    </select>
+                </div>
+                <div class="edit-page_change-password-block">
+                    <div class="edit-page__change-text">Change password</div>
+                    <div class="edit-page__body-input">
+                        <div class="body__input-name">
+                            Old password
+                        </div>
+                        <input type="password">
+                    </div>
+                    <div class="edit-page__body-input">
+                        <div class="body__input-name">
+                            New password
+                        </div>
+                        <input type="password">
+                    </div>
+                    <div class="edit-page__body-input">
+                        <div class="body__input-name">
+                            Confirm new password
+                        </div>
+                        <input class="confirm" type="password">
+                    </div>
+                </div>
+            </div>
+            <div class="edit-page__footer">
+                <div class="edit-page__footer-button">
+                    <button class="footer__save-button">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
