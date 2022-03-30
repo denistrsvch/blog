@@ -1,4 +1,4 @@
-html{
+html {
     font-family: Signika, serif;
 }
 
@@ -14,7 +14,20 @@ html{
     margin: 5px;
 }
 
-.post-template__title{
+.post-template.wall {
+    max-width: 360px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #6e6e6e;
+    border-radius: 20px;
+    background-color: #a9b7ae;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.post-template__title {
     padding: 10px 0;
 }
 
@@ -59,7 +72,7 @@ html{
 .description__text-area {
     display: flex;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 5px 10px;
 }
 
 .description__description {
@@ -67,7 +80,7 @@ html{
     font-size: 14px;
     font-weight: inherit;
     color: #262626;
-    padding: 5px 0;
+
 }
 
 .description__more-button {
@@ -94,19 +107,6 @@ html{
     padding: 0 10px;
 }
 
-.post-template-wall {
-    max-width: 360px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border: solid 1px #6e6e6e;
-    border-radius: 20px;
-    background-color: #a9b7ae;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 0 10px;
-}
-
 .post-template__photo-body-wall {
     width: 80%;
     border: solid 1px #6e6e6e;
@@ -114,7 +114,7 @@ html{
     margin: auto;
 }
 
-.photo{
+.photo {
     border: solid 1px #6e6e6e;
     border-radius: 20px;
     width: 100%;
@@ -122,12 +122,31 @@ html{
     object-fit: cover;
 }
 
-.photo-icon{
+.photo-icon {
     border: solid 1px #6e6e6e;
     border-radius: 10px;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.description__likes-icon {
+
+}
+
+.like{
+    transform: translate(-2px, 0);
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+    fill: rgb(92, 92, 92);
+    cursor: pointer;
+}
+
+
+.like._active{
+     fill: rgb(435, 92, 92);
 }
 
 
@@ -157,7 +176,7 @@ html{
         font-size: 16px;
     }
 
-    .post-template-wall {
+    .post-template.wall {
         max-width: 450px;
     }
 }
@@ -183,7 +202,7 @@ html{
 
 @media (min-width: 992px) {
 
-    .post-template-wall {
+    .post-template.wall {
         max-width: 500px;
     }
 

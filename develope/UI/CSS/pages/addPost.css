@@ -3,25 +3,45 @@ html {
     font-family: Signika, serif;
 }
 
-.container {
-    padding: 0 20px;
+.modal__container {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 15;
+    transition: all 0.4s ease 0s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal__container.open{
+    opacity: 1;
+    visibility: visible;
 }
 
 .page-box {
-    margin: 50px auto;
-    max-width: 450px;
-    width: 100%;
+    max-width: 470px;
+    height: 560px;
     border: solid 1px #6e6e6e;
     border-radius: 20px;
     background-color: #a9b7ae;
     padding-bottom: 15px;
+    transition: all 0.4s ease 0s;
+    position: relative;
+    margin: 50px 20px;
 }
 
 .page-box__cancel {
-    display: flex;
-    margin-top: 16px;
-    justify-content: end;
-    padding: 0 15px;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    color: #262626;
+    font-size: 24px;
+    position: absolute;
 }
 
 .page-box__text-add {
@@ -54,6 +74,7 @@ html {
 }
 
 .page-box__selection-text {
+    bottom: 0;
     font-size: 12px;
     font-weight: normal;
     text-align: center;
@@ -61,7 +82,7 @@ html {
     padding: 10px 10px;
 }
 
-input, textarea {
+.post-title, .post-desc {
     max-width: 380px;
     width: 65%;
     border: solid 1px #6e6e6e;
@@ -75,7 +96,7 @@ input, textarea {
     text-align: center;
 }
 
-textarea {
+.post-desc {
     height: 45px;
     font-family: Signika, serif;
     font-size: 16px;
@@ -94,7 +115,7 @@ textarea {
     text-align: center;
 }
 
-button {
+.add-button {
     border: solid 1px #6e6e6e;
     border-radius: 30px;
     background-color: #d5b19b;
@@ -114,24 +135,28 @@ button:hover {
 
 @media (min-width: 576px) {
 
+    .page-box{
+        height: 605px;
+    }
+
     .page-box__text-add {
         font-size: 26px;
     }
 
     .page-box__selection-area {
-        height: 400px;
+        height: 420px;
     }
 
     .page-box__selection-text {
-        margin-top: 125px;
+        /*margin-top: 125px;*/
         font-size: 16px;
     }
 
-    textarea {
+    .post-desc {
         font-size: 18px;
     }
 
-    input {
+    .post-title {
         font-size: 22px;
     }
 
@@ -142,29 +167,34 @@ button:hover {
 
 @media (min-width: 768px) {
 
+    .page-box{
+        height: 620px;
+    }
+
+
     .page-box__text-add {
         font-size: 26px;
     }
 
     .page-box__selection-area {
-        height: 450px;
+        height: 350px;
     }
 
     .page-box__selection-text {
-        margin-top: 125px;
+        /*margin-top: 125px;*/
         font-size: 16px;
     }
 
-     input,textarea {
-         padding: 10px 15px;
-         font-size: 22px;
+    .post-title, .post-desc {
+        padding: 10px 15px;
+        font-size: 22px;
     }
 
     .body__add-text {
         font-size: 24px;
     }
 
-    button {
+    .add-button {
         font-size: 22px;
     }
 }

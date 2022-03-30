@@ -7,19 +7,58 @@
     <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="../CSS/pages/editProfilePage.css">
     <link rel="stylesheet" href="../CSS/blocks/header.css">
+    <link rel="stylesheet" href="../CSS/pages/addPost.css">
+
     <title>Edit profile</title>
 </head>
 <body>
 <div class="container">
+
     <header class="header">
-        <div class="header__body">
-            <div class="header__inner">
-                <div class="header__add-button">
-                    <button class="header__add-post-button"><img src="../images/add.svg" alt=""></button>
+        <div class="header__container">
+
+            <div class="header__burger-menu menu">
+                <div class="menu__icon">
+                    <span></span>
                 </div>
-                <div class="header__burger-button">
-                    <button class="header__burger-menu-button"><img src="../images/burger.svg" alt="Burger menu">
-                    </button>
+                <nav class="menu__body">
+                    <ul class="menu__list">
+                        <li><a href="index.html" class="menu__link">My profile</a></li>
+                        <li><a href="postsPage.html" class="menu__link">News</a></li>
+                        <li><a href="#modal" class="menu__link modal-link">Add post</a></li>
+                        <li><a href="editProfilePage.html" class="menu__link">Edit profile</a></li>
+                        <li><a href="editProfilePage.html" class="menu__link">Change password</a></li>
+                        <li><a href=" " class="menu__link">Search users</a></li>
+                        <li><a href=" " class="menu__link">Log out</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="modal" class="modal__container">
+            <div class="page-box">
+                <a class="page-box__cancel" href="#">X</a>
+                <div class="page-box__text-add">
+                    Add your new post!
+                </div>
+                <div class="page-box__selection-area">
+                    <div class="page-box_selection-icon">
+                        <div class="page-box__icon-border">
+                            <div class="page-box__icon-image">
+                                <img src="../images/image.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="page-box__selection-text">
+                            Click here to select photo
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-box__input-forms">
+                    <input class="post-title" type="text" placeholder="Title">
+                    <textarea class="post-desc" name="description" cols="30" rows="10" placeholder="Description"></textarea>
+                </div>
+                <div class="page-box__button">
+                    <button class="add-button">Add</button>
                 </div>
             </div>
         </div>
@@ -54,7 +93,7 @@
                     <div class="body__input-name">
                         Email
                     </div>
-                    <input type="email">
+                    <input id="formEmail" type="email" >
                 </div>
                 <div class="edit-page__body-input">
                     <div class="body__input-name">
@@ -103,5 +142,8 @@
         </div>
     </div>
 </div>
+<script src="../JS/burgerMenu.js"></script>
+<script src="../JS/addPost.js"></script>
+
 </body>
 </html>
